@@ -1,0 +1,83 @@
+<html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+            <title>Collage Web App</title>
+        </head>
+
+<body>
+    <center>
+        <div class="heading" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+            <h1 id="col">Collage Web App</h1>
+        </div>
+
+        <br>
+
+        <div class="important" data-aos="slide-right" data-aos-duration="1600" data-aos-offset="0" data-aos-once="true">
+            <h3>as soon as the pop-up appears, please click Allow.</h3>
+        </div>
+
+        <div class="instructions" data-aos="slide-right" data-aos-duration="1700" data-aos-offset="0" data-aos-once="true">
+            <h2>Say "Selfie" to taking your selfie and making a collage out of it!!</h2>
+        </div>
+
+        <br>
+
+        <div class="voice_output" data-aos="slide-left" data-aos-duration="1600" data-aos-offset="0" data-aos-once="true">
+            <h3>Your voice output:</h3>
+            <textarea id="textbox" class="form-control" readonly="true"></textarea>
+        </div>
+
+        <br>
+
+        <div class="start" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+            <button onclick="start()">Start</button>
+            <br><br>
+            <h3 id="pres">Press the start button to start</h3>
+        </div>
+
+        <br><br>
+
+        <div class="webcam" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-once="true">
+            <h3>Your Webcam: </h3>
+            <div id="camera"></div>
+        </div>
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+        <br>
+        <div id="resultRow">
+            <div id="result1" class="column">
+                <img src="3358359.jpg">
+            </div>
+
+            <div id="result2" class="column">
+                <img src="fLFdce.jpg">
+            </div>
+
+            <div id="result3" class="column">
+                <img src="wp5098351.jpg">
+            </div>
+        </div>
+    </center>
+
+    <div class="copy_right_footer">
+        Developed by - B.Suhas
+      </div>
+      <script type="text/javascript" src="main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
+</body>
+
+</html>
